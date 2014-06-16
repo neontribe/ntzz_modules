@@ -3,4 +3,4 @@ description = Performs custom post-profile installs
 core = 7.x
 package = Neontabs
 php = 5.3
-files[] = neontabs_custom.install
+files[] = ntzz_settings.install
