@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * installs custom settings from a specified file
+ */
+
+/**
+ * Implements hook_install().
+ */
+function neontabs_custom_install() {
+
+  include_once 'neontabs_settings.php';
+  // set these so they can be accessed by the installers of other modules
+  variable_set('neontabs_config_file', 'neontabs_settings');
+  variable_set('neontabs_config_module', 'neontabs_custom');
+
+  // SET THE API.
+  foreach ($api as $key => $option) {
+    variable_set($key, $option);
+  }
+
+  if (isset($theme)) {
+  	variable_set('theme_default', $theme);
+    theme_enable(array($theme));
+  }
+
+  // SET THEME SETTINGS.
+  foreach ($variables as $key => $option) {
+    variable_set($key, $option);
+  }
+
+  // ENABLE THE MODULES.
+  if ($modules) {
+    $success = module_enable($modules, TRUE);
+    if($success){
+      watchdog('notice', 'enable neontabs modules successful', $modules);
+    } else{
+      watchdog('warning', 'enable neontabs modules failed', $modules);
+    }
+
+  }
+
+}
