@@ -11,8 +11,8 @@ function ntzz_settings_install() {
 
   include_once 'ntzz_settings.php';
   // set these so they can be accessed by the installers of other modules
-  variable_set('neontabs_config_file', 'neontabs_settings');
-  variable_set('neontabs_config_module', 'neontabs_custom');
+  variable_set('neontabs_config_file', 'ntzz_settings');
+  variable_set('neontabs_config_module', 'ntzz_settings');
 
   // SET THE API.
   foreach ($api as $key => $option) {
