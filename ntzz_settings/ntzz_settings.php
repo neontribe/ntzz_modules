@@ -134,6 +134,10 @@ $variables = array(
   // AREA PAGE MENU OPTIONS.
   'neontabs_arealoc_page_area_menu' => 'neontabs-main-menu:0',
   'neontabs_arealoc_page_location_menu' => '',
+  // AREA PAGE AUTOCREATE
+  'neontabs_arealoc_page_area_auto' => TRUE,
+  // LOCATION PAGE AUTOCREATE
+  'neontabs_arealoc_page_location_auto' => TRUE,
 );
 
 /** ADD Custom attributes to search form 
