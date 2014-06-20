@@ -134,10 +134,18 @@ $variables = array(
   // AREA PAGE MENU OPTIONS.
   'neontabs_arealoc_page_area_menu' => 'neontabs-main-menu:0',
   'neontabs_arealoc_page_location_menu' => '',
-  // AREA PAGE AUTOCREATE
+  // AREA PAGE AUTOCREATE.
   'neontabs_arealoc_page_area_auto' => TRUE,
-  // LOCATION PAGE AUTOCREATE
+  'neontabs_arealoc_page_area_alias' => 'cottages/[areaslug]',
+  'neontabs_arealoc_page_area_title' => '[areaname] Holiday Cottages | [brandname]',
+  'neontabs_arealoc_page_area_meta' => 'Holiday Cottages in [areaname]',
+
+  // LOCATION PAGE AUTOCREATE.
   'neontabs_arealoc_page_location_auto' => TRUE,
+  'neontabs_arealoc_page_location_alias' => 'cottages/[areaslug]/[locationslug]',
+  'neontabs_arealoc_page_location_title' => '[locationname] Holiday Cottages | [brandname]',
+  'neontabs_arealoc_page_location_meta' => 'Holiday Cottages in [locationname]',
+
 );
 
 /** ADD Custom attributes to search form 
