@@ -131,6 +131,24 @@ $variables = array(
     'location' => 'location',
     'attributes' => 'attributes',
   ),
+  // WEIGHTING OPTIONS
+  'neontabs_search_arrival_date_weight' => 1,
+  'neontabs_search_nights_weight' => 2,
+  'neontabs_search_rating_weight' => 6,
+  'neontabs_search_accommodates_weight' => 5,
+  'neontabs_search_area_weight' => 3,
+  'neontabs_search_location_weight' => 4,
+  'neontabs_search_pets_weight' => 10,
+  'neontabs_search_propref_weight' => 8,
+  // TITLE OPTIONS
+  'neontabs_search_arrival_date_title' => 'Arrival Date',
+  'neontabs_search_nights_title' => 'Number of Nights',
+  'neontabs_search_rating_title' => 'Minimum Star Rating',
+  'neontabs_search_accommodates_title' => 'Number of People',
+  'neontabs_search_area_title' => 'Area',
+  'neontabs_search_location_title' => 'Location',
+  'neontabs_search_pets_title' => 'Pet Friendly',
+  'neontabs_search_propref_title' => 'Property Name/Ref',
   // AREA PAGE MENU OPTIONS.
   'neontabs_arealoc_page_area_menu' => 'neontabs-main-menu:0',
   'neontabs_arealoc_page_location_menu' => '',
@@ -145,6 +163,7 @@ $variables = array(
   'neontabs_arealoc_page_location_alias' => 'cottages/[areaslug]/[locationslug]',
   'neontabs_arealoc_page_location_title' => '[locationname] Holiday Cottages | [brandname]',
   'neontabs_arealoc_page_location_meta' => 'Holiday Cottages in [locationname]',
+
 
 );
 
