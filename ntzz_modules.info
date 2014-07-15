@@ -1,0 +1,5 @@
+name = Neontabs vanilla fudge settings
+description = Neontabs vanilla fudge settings
+core = 7.x
+package = Vanilla fudge
+php = 5.3
